@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken", sans-serif;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        margin-top: 150px;
+    }
+    
+    .outerFrame{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.527);
+        display: flex;
+        width: 550px;
+        height: 400px;
+    }
+    
+    
+    .frame-one{
+        display: flex;
+        flex-direction: column;
+        margin-right: 55px;
+        padding-left: 50px;
+        border-radius: 15px;
+        background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    }
+    
+    .frame-one .result{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 65px;
+        margin-top: 35px;
+        font-size: 20px;
+        color: hsl(241, 100%, 89%);
+    }
+    
+    .frame-one .result .title{
+        margin-left: 45px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .frame-one .result .cir{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 90px;
+        width: 135px;
+        height: 135px;
+        background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+        margin-top: 30px;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    
+    }
+    
+    .frame-one .result .cir b{
+        font-size: 25px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .frame-one .great{
+        display: flex;
+        font-weight: 500;
+        flex-direction: column;
+        margin-bottom: 13px;
+        color: hsl(241, 100%, 89%);
+    }
+    
+    .frame-one .great b{
+        margin-left: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .frame-one .great p{
+        font-size: 16px;
+        margin-right: 35px;
+        margin-top: 3px;
+    }
+    
+    .frame-two{
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+        margin-top: 30px;
+        color: hsl(224, 30%, 27%);
+    }
+    
+    .frame-two .compents{
+        display: flex;
+        margin-top: 20px;
+        padding: 8px;
+        border-radius: 2px;
+        width: 200px;
+        justify-content: space-between; 
+    }
+    
+    .frame-two .reaction{
+        background-color: hsla(0, 100%, 67%, 0.171);
+    }
+    
+    .frame-two .reaction i{
+        color: hsla(0, 100%, 67%, 0.89);
+    }
+    
+    .frame-two .memory{
+        background-color: hsla(39, 100%, 56%, 0.158);
+    }
+    
+    .frame-two .memory i{
+        color: hsla(39, 100%, 56%, 0.856);
+    }
+    
+    .frame-two .verbal{
+        background-color: hsla(166, 100%, 37%, 0.13);
+    }
+    
+    .frame-two .verbal i{
+        color: hsla(166, 100%, 37%, 0.863);
+    }
+    
+    .frame-two .visual{
+        background-color: hsla(234, 85%, 45%, 0.089);
+    }
+    
+    .frame-two .visual i{
+        color: hsla(234, 85%, 45%, 0.918);
+    }
+    
+    .frame-two .continueBtn{
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: none;
+        padding: 13px;
+        width: 200px;
+    }
+    
+    .frame-two .continueBtn:hover{
+        background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        cursor: pointer;
+    }
+    
+    .attribution{
+        background-color: aquamarine;
+        position: relative;
+        margin-top: 100px;
+    }
+    .attribution a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+    body{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outerFrame{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: -95px;
+    }
+
+    .frame-one{
+        position: relative;
+        padding-top: 100px;
+        margin-bottom: 10px;
+        padding-bottom: 60px;
+        border-radius: 25px;
+        background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    }
+
+    .frame-one .result{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        color: hsl(241, 100%, 89%);
+    }
+
+    .frame-one .result .title{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: -55px;
+    }
+
+    .frame-one .result .cir{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 90px;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame-one .result .cir b{
+        font-size: 25px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .frame-one .great{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        flex-direction: column;
+        color: hsl(241, 100%, 89%);
+    }
+
+    .frame-one .great b{
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .frame-one .great p{
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .frame-two{
+        display: flex;
+        flex-direction: column;
+        color: hsl(224, 30%, 27%);
+    }
+
+    .frame-two .compents{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 9px;
+        border-radius: 5px;
+        font-weight: 500;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+    .frame-two b{
+        margin-left: 20px;
+    }
+
+    .frame-two .reaction{
+        background-color: hsla(0, 100%, 67%, 0.171);
+    }
+    
+    .frame-two .reaction i{
+        color: hsla(0, 100%, 67%, 0.89);
+    }
+    
+    .frame-two .memory{
+        background-color: hsla(39, 100%, 56%, 0.158);
+    }
+    
+    .frame-two .memory i{
+        color: hsla(39, 100%, 56%, 0.856);
+    }
+    
+    .frame-two .verbal{
+        background-color: hsla(166, 100%, 37%, 0.13);
+    }
+    
+    .frame-two .verbal i{
+        color: hsla(166, 100%, 37%, 0.863);
+    }
+    
+    .frame-two .visual{
+        background-color: hsla(234, 85%, 45%, 0.089);
+    }
+    
+    .frame-two .visual i{
+        color: hsla(234, 85%, 45%, 0.918);
+    }
+
+    .frame-two .continueBtn{
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        border: none;
+        padding: 13px;
+        width: 250px;
+    }
+    
+    .frame-two .continueBtn:hover{
+        background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        cursor: pointer;
+    }
+    
+    .attribution{
+        position: relative;
+        margin-top: 105px;
+        margin-left: 25px;
+        margin-right: 20px;
+        height: 100%;
+    }
+    .attribution a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
